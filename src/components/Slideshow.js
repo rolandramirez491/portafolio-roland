@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; // Estilos requeridos para react-slick
-import "slick-carousel/slick/slick-theme.css"; // Tema predeterminado de react-slick
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css"; 
 import './Slideshow.css';
 
-// Importa el GIF
-import animacion from '../images/animacion.gif';  // Ruta desde src
+
+import animacion from '../images/animacion.gif';  
 
 const Slideshow = () => {
   const settings = {
@@ -21,17 +21,17 @@ const Slideshow = () => {
     <div className="slideshow">
       <div style={{ position: "relative", maxWidth: "800px", margin: "0 auto" }}>
         <Slider {...settings}>
-          {/* Primer slide con GIF animado */}
+          {/* utilizo el gif para el primer slide */}
           <div className="slide">
             <h2>Roland Ramírez Patiño</h2>
             <p>Soy desarrollador web cursando el tercer semestre </p>
             <p>Estudio Tecnólogia en Desarrollo de Software</p>
             <p>Tengo 34 años</p>
-            {/* Mostrar el GIF importado */}
+            {/* aqui lo muestro el gif */}
             <img src={animacion} alt="Bolita animada" className="bouncing-ball" />
           </div>
 
-          {/* Otros slides */}
+          {/* los otros */}
           <div className="slide">
             <h2>Mis Gustos</h2>
             <ul>
