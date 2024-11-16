@@ -1,0 +1,54 @@
+/* Estilos generales para el slideshow */
+.slideshow {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.slide {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necesario para que el GIF se posicione dentro del contenedor */
+  overflow: hidden; /* Evita que el GIF se desborde fuera del slide */
+}
+
+/* Cambiar color del texto */
+.slide h2,
+.slide p,
+.slide ul {
+  position: relative; /* Asegura que el contenido del texto esté encima del GIF */
+  z-index: 2; /* Asegura que el texto se mantenga por encima del GIF */
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo translúcido para el texto */
+  padding: 10px;
+  border-radius: 5px; /* Opcional: para bordes redondeados */
+  color: #333; /* Color del texto, puedes cambiarlo por cualquier color que prefieras */
+}
+
+/* Animación de rebote para el GIF */
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(1369%, 0%); /* Rebota hacia la derecha */
+  }
+  50% {
+    transform: translate(1369%, 586%); /* Rebota a la esquina inferior derecha */
+  }
+  75% {
+    transform: translate(0, 586%); /* Rebota a la esquina inferior izquierda */
+  }
+}
+
+/* Estilos para el GIF animado */
+.bouncing-ball {
+  width: 50px; /* Ajusta el tamaño del GIF */
+  height: 50px; /* Ajusta el tamaño del GIF */
+  position: absolute; /* Necesario para posicionar el GIF dentro del contenedor */
+  top: 10%; /* Ajusta la posición vertical inicial del GIF */
+  left: 10%; /* Ajusta la posición horizontal inicial del GIF */
+  animation: bounce 39s cubic-bezier(0.65, 1, 0.1, 1) infinite; /* Aplicamos la animación */
+  z-index: 1; /* Asegura que el GIF esté detrás del contenido de texto */
+}
