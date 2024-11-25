@@ -60,9 +60,10 @@ const Slideshow = () => {
             <h2>Proyectos</h2>
             <p>Algunos proyectos incluyen:</p>
             <ul>
-            <li><a href="www.github.com/1">clasificador de objetos para celular con ia desarrollada con procesamiento en local sin internet</a></li>
-              <li><a href="www.github.com/1">gestor de tiquetes aereos con IA</a></li>
-              <li><a href="www.github.com/1">Proyecto con inteligencia artificial en C#.</a></li>
+            <li><a href="https://github.com/rolandramirez491/clasificador-por-ia-en-local-por-camara">app de celular qeu clasifica por inteligencia artificial todo lo que aparece en camra en tiempo real trabajando en local sin internet mediante el procesamiento del movil</a></li>
+            <li><a href="https://github.com/rolandramirez491/iaadvance">app de celular que resuelve problemas dentro de imagenes y las identifica</a></li>
+              <li><a href="https://github.com/rolandramirez491/mi-proyecto-react">generador de perfiles falsos con foto y toda lka informacion que pueda tener una persona</a></li>
+              <li><a href="https://github.com/rolandramirez491/organiza-tu-vida">app para celular que mediante inteligencia artificial te organiza tu tiempo y tus tarteas del dia a dia de manera eficiente.</a></li>
             </ul>
             <img src={animacion} alt="Bolita animada" className="bouncing-ball" />
           </div>
